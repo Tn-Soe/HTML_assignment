@@ -1,0 +1,15 @@
+table {
+    background-color: azure;
+    border: 1px solid lightblue;
+    margin: auto;
+    height: 500px;
+    width: 30%;
+}
+
+td {
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+}

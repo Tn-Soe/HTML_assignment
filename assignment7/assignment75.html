@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="tableCalcu"></div>
+</body>
+<script>
+    var html = "";
+    html += "<table width='80%' border='1' cellspacing = '0' align='center' cellspadding='20'><tr style='height:50px; background-color:lightgrey;'><td align='center' width='25%'>x</td><td align='center' width='25%'>x<sup>2</sup></td><td align='center' width='25%'>1/x</td><td align='center' width='25%'>&radic;x</td></tr>"
+
+    for (var i = 1; i <= 5; i++) {
+        var sqrNum = i * 1;
+        var ratio = Math.round((1 / i) * 1000) / 1000;
+        var sqrtNum = Math.round(Math.sqrt(i) * 1000) / 1000;
+        html += "<tr><td  align='center'>" + i + "</td><td align='center'>" + sqrNum + "</td><td align='center'>" + ratio + "</td><td align='center'>" + sqrtNum + "</td></tr>"
+    }
+
+    html += "</table>"
+
+    document.getElementById("tableCalcu").innerHTML = html;
+</script>
+
+</html>
